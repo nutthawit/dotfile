@@ -42,18 +42,18 @@ bash ~/.fzf/install --no-bash --no-zsh
 cargo install bat eza ripgrep zoxide
 
 # Integrate utility programs to fish
-cp home/.config/fish/functions/*.fish ~/.config/fish/functions/
-cp home/.config/fish/config.fish ~/.config/fish/config.fish
-cp home/.config/fish/fish_variables ~/.config/fish/fish_variables
-sudo cp usr/local/bin/ssh-toggle /usr/local/bin/ssh-toggle
-sudo chmod +x /usr/local/bin/ssh-toggle
+# cp home/.config/fish/functions/*.fish ~/.config/fish/functions/
+# cp home/.config/fish/config.fish ~/.config/fish/config.fish
+# cp home/.config/fish/fish_variables ~/.config/fish/fish_variables
+# sudo cp usr/local/bin/ssh-toggle /usr/local/bin/ssh-toggle
+# sudo chmod +x /usr/local/bin/ssh-toggle
 
 # Install fisher plugin manager
-curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
+# curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
 
 # Install fish-shell plugins
-fisher install jhillyerd/plugin-git
-fisher install oh-my-fish/plugin-bang-bang
+# fisher install jhillyerd/plugin-git
+# fisher install oh-my-fish/plugin-bang-bang
 
 # Install nerdfonts
 git clone --depth 1 https://github.com/ryanoasis/nerd-fonts.git ~/.nerd-fonts
@@ -75,7 +75,7 @@ flatpak install flathub com.anydesk.Anydesk --user -y
 sudo dnf install -y google-chrome-stable openfortivpn nmap nodejs
 
 # Install Telegram and fix font
-flatpak install flathub org.telegram.desktop --user
+flatpak install flathub org.telegram.desktop --user -y
 mkdir -p ~/.var/app/org.telegram.desktop/config/fontconfig/conf.d/
 cp /etc/fonts/conf.d/*.conf ~/.var/app/org.telegram.desktop/config/fontconfig/conf.d/
 ```
