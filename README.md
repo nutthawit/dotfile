@@ -28,7 +28,7 @@ sudo dnf install -y gstreamer1-plugins-bad-free-extras gstreamer1-plugin-openh26
 # Install required packages
 #
 # cargo: for complie some utility like eza ripgrep zoxide
-sudo dnf install -y cargo fish
+sudo dnf install -y cargo fish stow
 
 #############################################################
 # Following steps required fish shell as Interactive shell ##
@@ -53,6 +53,7 @@ curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fi
 
 # Install fish-shell plugins
 fisher install jhillyerd/plugin-git
+fisher install oh-my-fish/plugin-bang-bang
 
 # Install nerdfonts
 git clone --depth 1 https://github.com/ryanoasis/nerd-fonts.git ~/.nerd-fonts
