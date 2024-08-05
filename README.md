@@ -11,9 +11,12 @@ echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com
 dnf check-upgrade
 
 # Install required packages
-sudo dnf install -y code git-core btop brctl
-sudo dnf group install -y --with-optional virtualization
+sudo dnf install -y code git-core btop
 sudo dnf group install -y container-management
+
+# Install group Virtualization
+# sudo dnf group install -y --with-optional virtualization
+# sudo dnf install -y brctl
 ```
 
 ## Multimedia
@@ -72,6 +75,7 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 
 flatpak install flathub rest.insomnia.Insomnia --user -y
 flatpak install flathub com.anydesk.Anydesk --user -y
+flatpak install flathub im.riot.Riot --user -y
 sudo dnf install -y google-chrome-stable openfortivpn nmap nodejs
 
 # Install Telegram and fix font
