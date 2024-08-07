@@ -82,4 +82,7 @@ sudo dnf install -y google-chrome-stable openfortivpn nmap nodejs
 flatpak install flathub org.telegram.desktop --user -y
 mkdir -p ~/.var/app/org.telegram.desktop/config/fontconfig/conf.d/
 cp /etc/fonts/conf.d/*.conf ~/.var/app/org.telegram.desktop/config/fontconfig/conf.d/
+
+# Install Docker
+https://docs.docker.com/engine/install/fedora/#install-from-a-package
 ```
