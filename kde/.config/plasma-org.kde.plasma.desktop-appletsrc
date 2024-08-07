@@ -55,7 +55,7 @@ immutability=1
 plugin=org.kde.plasma.icontasks
 
 [Containments][2][Applets][5][Configuration][General]
-launchers=applications:org.kde.konsole.desktop,preferred://browser,applications:code.desktop,applications:google-chrome.desktop,applications:org.keepassxc.KeePassXC.desktop,applications:org.telegram.desktop.desktop
+launchers=applications:org.kde.konsole.desktop,preferred://browser,applications:code.desktop,applications:google-chrome.desktop,applications:org.keepassxc.KeePassXC.desktop,applications:org.telegram.desktop.desktop,file:///home/tie/.local/share/flatpak/exports/share/applications/im.riot.Riot.desktop
 
 [Containments][2][Applets][6]
 immutability=1
@@ -149,14 +149,14 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][8][Applets][25][Configuration]
-PreloadWeight=36
+PreloadWeight=20
 
 [Containments][8][Applets][26]
 immutability=1
 plugin=org.kde.plasma.brightness
 
 [Containments][8][Applets][26][Configuration]
-PreloadWeight=31
+PreloadWeight=15
 
 [Containments][8][Applets][27]
 immutability=1
