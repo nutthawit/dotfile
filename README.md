@@ -11,7 +11,7 @@ echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com
 dnf check-upgrade
 
 # Install required packages
-sudo dnf install -y code git-core btop toolbox python3-pip
+sudo dnf install -y code git-core btop toolbox
 
 # Install group Virtualization
 # sudo dnf group install -y --with-optional virtualization
@@ -77,15 +77,18 @@ sudo dnf config-manager setopt google-chrome.enabled=1
 # Enable flathub repo
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo --user
 
+# Install flathub apps
 flatpak install flathub rest.insomnia.Insomnia --user -y
 flatpak install flathub com.anydesk.Anydesk --user -y
 flatpak install flathub im.riot.Riot --user -y
-sudo dnf install -y google-chrome-stable openfortivpn nmap nodejs
-
 # Install Telegram and fix font
 flatpak install flathub org.telegram.desktop --user -y
 mkdir -p ~/.var/app/org.telegram.desktop/config/fontconfig/conf.d/
 cp /etc/fonts/conf.d/*.conf ~/.var/app/org.telegram.desktop/config/fontconfig/conf.d/
+
+# Install required packages
+sudo dnf install -y google-chrome-stable openfortivpn nmap nodejs python3-pip python3-devel python3.12
+
 
 # Stow
 rm -rf ~/.config/plasma-org.kde.plasma.desktop-appletsrc
