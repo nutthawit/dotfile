@@ -102,4 +102,7 @@ mkdir ~/projects/{work,personal,community}
 z ~/projects/work
 git clone git@git.opsta.io:opstella/single-portal/single-portal.git
 git clone git@git.opsta.io:nutthawit/single-portal-info.git
+
+git clone git@git.opsta.io:ptt/zouth/dcloud.git
+git clone git@git.opsta.io:nutthawit/dcloud-info.git
 ```
