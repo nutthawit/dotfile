@@ -66,7 +66,7 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][2][Applets][7][Configuration]
-PreloadWeight=70
+PreloadWeight=80
 SystrayContainmentId=8
 
 [Containments][2][General]
@@ -138,7 +138,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][8][Applets][23][Configuration]
-PreloadWeight=65
+PreloadWeight=100
 
 [Containments][8][Applets][24]
 immutability=1
@@ -149,14 +149,14 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][8][Applets][25][Configuration]
-PreloadWeight=20
+PreloadWeight=0
 
 [Containments][8][Applets][26]
 immutability=1
 plugin=org.kde.plasma.brightness
 
 [Containments][8][Applets][26][Configuration]
-PreloadWeight=15
+PreloadWeight=0
 
 [Containments][8][Applets][27]
 immutability=1

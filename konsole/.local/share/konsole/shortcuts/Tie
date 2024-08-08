@@ -39,8 +39,8 @@
     <Action name="split-view-auto" shortcut="Ctrl+*"/>
     <Action name="expand-active-view" shortcut="Ctrl+Shift+]"/>
     <Action name="shrink-active-view" shortcut="Ctrl+Shift+["/>
-    <Action name="next-tab" shortcut="Shift+Right; Ctrl+Tab"/>
-    <Action name="previous-tab" shortcut="Shift+Left; Ctrl+Shift+Tab"/>
+    <Action name="next-tab" shortcut="Alt+Right; Ctrl+Tab"/>
+    <Action name="previous-tab" shortcut="Alt+Left; Ctrl+Shift+Tab"/>
     <Action name="focus-view-above" shortcut="Ctrl+Shift+Up; Ctrl+K"/>
     <Action name="focus-view-below" shortcut="Ctrl+Shift+Down; Ctrl+J"/>
     <Action name="focus-view-left" shortcut="Ctrl+Shift+Left; Ctrl+H"/>
