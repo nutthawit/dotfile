@@ -105,4 +105,7 @@ git clone git@git.opsta.io:nutthawit/single-portal-info.git
 
 git clone git@git.opsta.io:ptt/zouth/dcloud.git
 git clone git@git.opsta.io:nutthawit/dcloud-info.git
+
+# Lib require for virtualenv of dcloud-info (vpn-ptt-requirements.txt)
+sudo dnf install -y libxml2-devel libxslt-devel
 ```
