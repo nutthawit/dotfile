@@ -32,6 +32,8 @@ sudo dnf install -y gstreamer1-plugins-bad-free-extras gstreamer1-plugin-openh26
 # cargo: for complie some utility like eza ripgrep zoxide
 sudo dnf install -y cargo fish stow
 
+rm -rf ~/.local/share/konsole
+stow konsole
 #############################################################
 # Following steps required fish shell as Interactive shell ##
 #############################################################
@@ -60,6 +62,9 @@ cargo install bat eza ripgrep zoxide
 # Install nerdfonts
 git clone --depth 1 https://github.com/ryanoasis/nerd-fonts.git ~/.nerd-fonts
 bash ~/.nerd-fonts/install.sh
+
+rm -rf ~/.config/fish
+stow fish
 ```
 
 ## Working
@@ -82,6 +87,19 @@ flatpak install flathub org.telegram.desktop --user -y
 mkdir -p ~/.var/app/org.telegram.desktop/config/fontconfig/conf.d/
 cp /etc/fonts/conf.d/*.conf ~/.var/app/org.telegram.desktop/config/fontconfig/conf.d/
 
+# Stow
+rm -rf ~/.config/plasma-org.kde.plasma.desktop-appletsrc
+stow kde
+
+rm -rf ~/.local/bin
+stow script
+
 # Install Docker
 https://docs.docker.com/engine/install/fedora/#install-from-a-package
+
+# Opsta
+mkdir ~/projects/{work,personal,community}
+z ~/projects/work
+git clone git@git.opsta.io:opstella/single-portal/single-portal.git
+git clone git@git.opsta.io:nutthawit/single-portal-info.git
 ```
