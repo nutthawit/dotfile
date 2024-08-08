@@ -11,8 +11,7 @@ echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com
 dnf check-upgrade
 
 # Install required packages
-sudo dnf install -y code git-core btop
-sudo dnf group install -y container-management
+sudo dnf install -y code git-core btop toolbox
 
 # Install group Virtualization
 # sudo dnf group install -y --with-optional virtualization
