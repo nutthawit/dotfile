@@ -32,6 +32,12 @@ sudo dnf install -y gstreamer1-plugins-bad-free-extras gstreamer1-plugin-openh26
 # cargo: for complie some utility like eza ripgrep zoxide
 sudo dnf install -y cargo fish stow
 
+# Create fish profile on konsole
+#
+# Re-open konsole and switch profile to "fish"
+rm -rf ~/.local/share/konsole
+stow konsole
+
 #############################################################
 # Following steps required fish shell as Interactive shell ##
 #############################################################
@@ -43,13 +49,6 @@ bash ~/.fzf/install --no-bash --no-zsh
 # Install utility programs
 cargo install bat eza ripgrep zoxide
 
-# Integrate utility programs to fish
-# cp home/.config/fish/functions/*.fish ~/.config/fish/functions/
-# cp home/.config/fish/config.fish ~/.config/fish/config.fish
-# cp home/.config/fish/fish_variables ~/.config/fish/fish_variables
-# sudo cp usr/local/bin/ssh-toggle /usr/local/bin/ssh-toggle
-# sudo chmod +x /usr/local/bin/ssh-toggle
-
 # Install fisher plugin manager
 # curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
 
@@ -60,30 +59,58 @@ cargo install bat eza ripgrep zoxide
 # Install nerdfonts
 git clone --depth 1 https://github.com/ryanoasis/nerd-fonts.git ~/.nerd-fonts
 bash ~/.nerd-fonts/install.sh
+
+rm -rf ~/.config/fish
+stow fish
 ```
 
 ## Working
 
 ```bash
-# Enable Google chrome repo
+# Install Google chrome
 sudo dnf install fedora-workstation-repositories -y
 sudo dnf config-manager setopt google-chrome.enabled=1
+sudo dnf install -y google-chrome-stable
 
-# Enable flathub repo
+# Install flathub apps
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo --user
-
 flatpak install flathub rest.insomnia.Insomnia --user -y
 flatpak install flathub com.anydesk.Anydesk --user -y
 flatpak install flathub im.riot.Riot --user -y
-sudo dnf install -y google-chrome-stable openfortivpn nmap nodejs
 
 # Install Telegram and fix font
 flatpak install flathub org.telegram.desktop --user -y
 mkdir -p ~/.var/app/org.telegram.desktop/config/fontconfig/conf.d/
 cp /etc/fonts/conf.d/*.conf ~/.var/app/org.telegram.desktop/config/fontconfig/conf.d/
 
+# Install utility pacakges such as debugger, troubleshooter, vpn etc..
+sudo dnf install -y openfortivpn nmap nodejs
+
+# Setup taskbar
+rm -rf ~/.config/plasma-org.kde.plasma.desktop-appletsrc
+stow kde
+
+# Add my scripts
+rm -rf ~/.local/bin
+stow script
+
 # Install Docker
 https://docs.docker.com/engine/install/fedora/#install-from-a-package
+
+# Create work directory
+mkdir ~/projects/{work,personal,community}
+z ~/projects/work
+
+# Git clone single-portal
+git clone git@git.opsta.io:opstella/single-portal/single-portal.git
+git clone git@git.opsta.io:nutthawit/single-portal-info.git
+
+# Git clone dcloud
+git clone git@git.opsta.io:ptt/zouth/dcloud.git
+git clone git@git.opsta.io:nutthawit/dcloud-info.git
+
+# Packages require for build virtualenv for dcloud-info (vpn-ptt-requirements.txt)
+sudo dnf install -y python3-pip python3-devel python3.12 libxml2-devel libxslt-devel
 ```
 
 ## Personal
