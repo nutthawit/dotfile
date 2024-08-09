@@ -85,3 +85,10 @@ cp /etc/fonts/conf.d/*.conf ~/.var/app/org.telegram.desktop/config/fontconfig/co
 # Install Docker
 https://docs.docker.com/engine/install/fedora/#install-from-a-package
 ```
+
+## Personal
+
+```bash
+# Install rust-src for support rust-analyzer extension on vscode
+sudo dnf install rust-src
+```
