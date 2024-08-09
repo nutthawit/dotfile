@@ -28,9 +28,10 @@ sudo dnf install -y gstreamer1-plugins-bad-free-extras gstreamer1-plugin-openh26
 
 ```bash
 # Install required packages
-#
-# cargo: for complie some utility like eza ripgrep zoxide
-sudo dnf install -y cargo fish stow
+sudo dnf install -y fish stow
+
+# Install rust via rustup
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 # Create fish profile on konsole
 #
@@ -62,6 +63,9 @@ bash ~/.nerd-fonts/install.sh
 
 rm -rf ~/.config/fish
 stow fish
+
+rm -rf ~/.bashrc ~/.bash_profile ~/.profile
+stow bash
 ```
 
 ## Working
