@@ -1,0 +1,28 @@
+#!/usr/bin/bash
+
+#
+# Toggle keys between tie and rosllarr
+#
+
+PREFIX=$HOME/.ssh
+
+## Test command
+TEST=$(ls -l $PREFIX | grep id | awk '/rosllarr/ {print}' | wc -l)
+
+## Used tie key
+use_tie () {
+  ln -sfv $PREFIX/tie_rsa $PREFIX/id_rsa
+  ln -sfv $PREFIX/tie_rsa.pub $PREFIX/id_rsa.pub
+}
+
+## Used rosllarr key
+use_ros () {
+  ln -sfv $PREFIX/rosllarr_rsa $PREFIX/id_rsa
+  ln -sfv $PREFIX/rosllarr_rsa.pub $PREFIX/id_rsa.pub
+}
+
+if [ $TEST -eq 2 ]; then
+  use_tie
+else
+  use_ros
+fi
