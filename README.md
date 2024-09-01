@@ -119,4 +119,7 @@ git clone git@git.opsta.io:nutthawit/dcloud-info.git
 
 # Packages require for build virtualenv for dcloud-info (vpn-ptt-requirements.txt)
 sudo dnf install -y python3-pip python3-devel python3.12 libxml2-devel libxslt-devel
+
+# Require for connect openshift via oc command
+sudo dnf install sshpass
 ```
