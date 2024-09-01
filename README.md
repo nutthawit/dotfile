@@ -16,6 +16,10 @@ sudo dnf install -y code git-core btop toolbox
 # Install group Virtualization
 # sudo dnf group install -y --with-optional virtualization
 # sudo dnf install -y brctl
+
+# Sync dropbox
+cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+~/.dropbox-dist/dropboxd
 ```
 
 ## Multimedia

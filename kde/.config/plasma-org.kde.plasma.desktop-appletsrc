@@ -18,6 +18,11 @@ wallpaperplugin=org.kde.image
 immutability=1
 plugin=org.kde.plasma.digitalclock
 
+[Containments][2][Applets][21][Configuration]
+PreloadWeight=75
+popupHeight=450
+popupWidth=560
+
 [Containments][2][Applets][22]
 immutability=1
 plugin=org.kde.plasma.showdesktop
@@ -44,7 +49,7 @@ immutability=1
 plugin=org.kde.plasma.icontasks
 
 [Containments][2][Applets][5][Configuration][General]
-launchers=applications:org.kde.konsole.desktop,preferred://browser,applications:code.desktop,applications:google-chrome.desktop,applications:org.keepassxc.KeePassXC.desktop,applications:org.telegram.desktop.desktop,file:///home/tie/.local/share/flatpak/exports/share/applications/im.riot.Riot.desktop
+launchers=applications:org.kde.konsole.desktop,preferred://browser,applications:code.desktop,applications:google-chrome.desktop,applications:rest.insomnia.Insomnia.desktop,applications:org.telegram.desktop.desktop,applications:org.keepassxc.KeePassXC.desktop,applications:org.kde.okular.desktop,file:///home/tie/.local/share/flatpak/exports/share/applications/im.riot.Riot.desktop
 
 [Containments][2][Applets][6]
 immutability=1
@@ -55,16 +60,16 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][2][Applets][7][Configuration]
-PreloadWeight=90
+PreloadWeight=100
 SystrayContainmentId=8
 
 [Containments][2][General]
 AppletOrder=3;4;5;6;7;21;22
 
-[Containments][23]
+[Containments][25]
 ItemGeometries-1536x864=
 ItemGeometriesHorizontal=
-activityId=f1bc8188-aa1a-4f50-b507-0f3dd670871a
+activityId=c99a859f-13b6-411e-a1e1-3dd2cc424158
 formfactor=0
 immutability=1
 lastScreen=0
@@ -72,8 +77,8 @@ location=0
 plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
-[Containments][24]
-activityId=f1bc8188-aa1a-4f50-b507-0f3dd670871a
+[Containments][27]
+activityId=c99a859f-13b6-411e-a1e1-3dd2cc424158
 formfactor=0
 immutability=1
 lastScreen=1
@@ -109,7 +114,7 @@ immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][8][Applets][13][Configuration]
-PreloadWeight=85
+PreloadWeight=95
 
 [Containments][8][Applets][14]
 immutability=1
@@ -139,6 +144,9 @@ plugin=org.kde.plasma.vault
 immutability=1
 plugin=org.kde.plasma.volume
 
+[Containments][8][Applets][20][Configuration]
+PreloadWeight=60
+
 [Containments][8][Applets][20][Configuration][General]
 migrated=true
 
@@ -147,21 +155,21 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][8][Applets][23][Configuration]
-PreloadWeight=18
+PreloadWeight=12
 
 [Containments][8][Applets][24]
 immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][8][Applets][24][Configuration]
-PreloadWeight=67
+PreloadWeight=97
 
 [Containments][8][Applets][25]
 immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][8][Applets][25][Configuration]
-PreloadWeight=18
+PreloadWeight=0
 
 [Containments][8][Applets][26]
 immutability=1

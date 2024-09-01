@@ -1,0 +1,3 @@
+script/*
+!script/.local/bin/ssh-toggle
+!script/.local/bin/sync-dropbox
