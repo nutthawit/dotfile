@@ -19,7 +19,7 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][2][Applets][21][Configuration]
-PreloadWeight=75
+PreloadWeight=80
 popupHeight=450
 popupWidth=560
 
@@ -49,7 +49,7 @@ immutability=1
 plugin=org.kde.plasma.icontasks
 
 [Containments][2][Applets][5][Configuration][General]
-launchers=applications:org.kde.konsole.desktop,preferred://browser,applications:code.desktop,applications:google-chrome.desktop,applications:rest.insomnia.Insomnia.desktop,applications:org.telegram.desktop.desktop,applications:org.keepassxc.KeePassXC.desktop,applications:org.kde.okular.desktop,file:///home/tie/.local/share/flatpak/exports/share/applications/im.riot.Riot.desktop
+launchers=applications:org.kde.konsole.desktop,preferred://browser,applications:code.desktop,applications:google-chrome.desktop,applications:rest.insomnia.Insomnia.desktop,applications:org.telegram.desktop.desktop,applications:org.keepassxc.KeePassXC.desktop,file:///home/tie/.local/share/flatpak/exports/share/applications/im.riot.Riot.desktop,applications:org.kde.okular.desktop
 
 [Containments][2][Applets][6]
 immutability=1
@@ -114,7 +114,7 @@ immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][8][Applets][13][Configuration]
-PreloadWeight=95
+PreloadWeight=100
 
 [Containments][8][Applets][14]
 immutability=1
@@ -155,7 +155,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][8][Applets][23][Configuration]
-PreloadWeight=12
+PreloadWeight=25
 
 [Containments][8][Applets][24]
 immutability=1
