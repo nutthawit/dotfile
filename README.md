@@ -99,6 +99,7 @@ sudo dnf install -y openfortivpn nmap nodejs
 
 # Setup taskbar
 rm -rf ~/.config/plasma-org.kde.plasma.desktop-appletsrc
+rm -rf ~/.config/kwinrc
 stow kde
 
 # Add my scripts

@@ -19,7 +19,7 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][2][Applets][21][Configuration]
-PreloadWeight=80
+PreloadWeight=100
 popupHeight=450
 popupWidth=560
 
@@ -72,11 +72,21 @@ AppletOrder=3;4;5;6;7;21;22
 
 [Containments][28]
 ItemGeometries-1536x864=
+ItemGeometries-1920x1080=
 ItemGeometriesHorizontal=
 activityId=49e116a2-5baa-4e3a-abd4-fedba3d6dc38
 formfactor=0
 immutability=1
 lastScreen=0
+location=0
+plugin=org.kde.plasma.folder
+wallpaperplugin=org.kde.image
+
+[Containments][29]
+activityId=49e116a2-5baa-4e3a-abd4-fedba3d6dc38
+formfactor=0
+immutability=1
+lastScreen=1
 location=0
 plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
@@ -127,6 +137,9 @@ plugin=org.kde.plasma.manage-inputmethod
 immutability=1
 plugin=org.kde.plasma.notifications
 
+[Containments][8][Applets][17][Configuration]
+PreloadWeight=60
+
 [Containments][8][Applets][18]
 immutability=1
 plugin=org.kde.plasma.printmanager
@@ -140,9 +153,10 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][8][Applets][20][Configuration]
-PreloadWeight=60
+PreloadWeight=100
 
 [Containments][8][Applets][20][Configuration][General]
+currentTab=streams
 migrated=true
 
 [Containments][8][Applets][23]
@@ -150,14 +164,14 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][8][Applets][23][Configuration]
-PreloadWeight=9
+PreloadWeight=63
 
 [Containments][8][Applets][24]
 immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][8][Applets][24][Configuration]
-PreloadWeight=97
+PreloadWeight=100
 
 [Containments][8][Applets][25]
 immutability=1
