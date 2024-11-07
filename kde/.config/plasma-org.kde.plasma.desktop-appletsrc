@@ -70,23 +70,13 @@ SystrayContainmentId=8
 [Containments][2][General]
 AppletOrder=3;4;5;6;7;21;22
 
-[Containments][28]
+[Containments][30]
 ItemGeometries-1536x864=
-ItemGeometries-1920x1080=
 ItemGeometriesHorizontal=
-activityId=49e116a2-5baa-4e3a-abd4-fedba3d6dc38
+activityId=f1bc8188-aa1a-4f50-b507-0f3dd670871a
 formfactor=0
 immutability=1
 lastScreen=0
-location=0
-plugin=org.kde.plasma.folder
-wallpaperplugin=org.kde.image
-
-[Containments][29]
-activityId=49e116a2-5baa-4e3a-abd4-fedba3d6dc38
-formfactor=0
-immutability=1
-lastScreen=1
 location=0
 plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
