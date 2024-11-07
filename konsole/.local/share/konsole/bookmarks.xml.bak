@@ -9,4 +9,12 @@
    </metadata>
   </info>
  </bookmark>
+ <bookmark href="file:///home/tie/.dotfile">
+  <title></title>
+  <info>
+   <metadata owner="http://freedesktop.org">
+    <bookmark:icon name=""/>
+   </metadata>
+  </info>
+ </bookmark>
 </xbel>

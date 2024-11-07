@@ -3,7 +3,9 @@
 ```bash
 # Enable RPM Fusion
 sudo dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
-sudo dnf config-manager setopt fedora-cisco-openh264.enabled=1
+# sudo dnf config-manager setopt fedora-cisco-openh264.enabled=1
+sudo dnf config-manager --enable fedora-cisco-openh264
+
 
 # Enable vscode repo
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
@@ -11,11 +13,15 @@ echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com
 dnf check-upgrade
 
 # Install required packages
-sudo dnf install -y code git-core btop toolbox
+sudo dnf install -y code git-core btop toolbox clang
 
 # Install group Virtualization
 # sudo dnf group install -y --with-optional virtualization
 # sudo dnf install -y brctl
+
+# Sync dropbox
+cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+~/.dropbox-dist/dropboxd
 ```
 
 ## Multimedia
@@ -27,8 +33,8 @@ sudo dnf install -y gstreamer1-plugins-bad-free-extras gstreamer1-plugin-openh26
 ## Shell environment
 
 ```bash
-# Install required packages (clang require for rust program such as bat eza etc..)
-sudo dnf install -y fish stow clang
+# Install required packages
+sudo dnf install -y fish stow
 
 # Install rust via rustup
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
@@ -47,6 +53,9 @@ stow konsole
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 bash ~/.fzf/install --no-bash --no-zsh
 
+rm -rf ~/.config/fish
+stow fish
+
 # Install utility programs
 cargo install bat eza ripgrep zoxide
 
@@ -61,9 +70,6 @@ cargo install bat eza ripgrep zoxide
 git clone --depth 1 https://github.com/ryanoasis/nerd-fonts.git ~/.nerd-fonts
 bash ~/.nerd-fonts/install.sh
 
-rm -rf ~/.config/fish
-stow fish
-
 rm -rf ~/.bashrc ~/.bash_profile ~/.profile
 stow bash
 ```
@@ -73,7 +79,8 @@ stow bash
 ```bash
 # Install Google chrome
 sudo dnf install fedora-workstation-repositories -y
-sudo dnf config-manager setopt google-chrome.enabled=1
+# sudo dnf config-manager setopt google-chrome.enabled=1
+sudo dnf config-manager --set-enabled google-chrome
 sudo dnf install -y google-chrome-stable
 
 # Install flathub apps
@@ -92,6 +99,7 @@ sudo dnf install -y openfortivpn nmap nodejs
 
 # Setup taskbar
 rm -rf ~/.config/plasma-org.kde.plasma.desktop-appletsrc
+rm -rf ~/.config/kwinrc
 stow kde
 
 # Add my scripts
@@ -99,11 +107,12 @@ rm -rf ~/.local/bin
 stow script
 
 # Install Docker
-https://docs.docker.com/engine/install/fedora/#install-from-a-package
+# https://docs.docker.com/engine/install/fedora/#install-from-a-package
+https://docs.docker.com/engine/install/fedora/#set-up-the-repository
 
 # Create work directory
-mkdir ~/projects/{work,personal,community}
-z ~/projects/work
+mkdir -p ~/projects/{work,personal,community}
+cd ~/projects/work
 
 # Git clone single-portal
 git clone git@git.opsta.io:opstella/single-portal/single-portal.git
@@ -117,13 +126,5 @@ git clone git@git.opsta.io:nutthawit/dcloud-info.git
 sudo dnf install -y python3-pip python3-devel python3.12 libxml2-devel libxslt-devel
 
 # Require for connect openshift via oc command
-sudo dnf install sshpass
+sudo dnf install -y sshpass
 ```
-
-<!--
-## Personal
-
-```bash
-# Install rust-src for support rust-analyzer extension on vscode
-sudo dnf install rust-src
-``` -->
