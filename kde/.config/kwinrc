@@ -1,8 +1,9 @@
 [Desktops]
 Id_1=b18d046e-d0ac-4113-ab72-2d7de3d9164a
 Id_2=61249bba-7415-4d68-b673-ae32b954f652
-Number=2
-Rows=2
+Id_3=b1984189-2825-4a63-8ef5-3ec432f6862d
+Number=3
+Rows=3
 
 [Tiling]
 padding=4

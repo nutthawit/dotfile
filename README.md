@@ -27,7 +27,8 @@ cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
 ## Multimedia
 
 ```bash
-sudo dnf install -y gstreamer1-plugins-bad-free-extras gstreamer1-plugin-openh264 vlc yt-dlp
+# sudo dnf install -y gstreamer1-plugins-bad-free-extras gstreamer1-plugin-openh264 
+sudo dnf install -y yt-dlp
 ```
 
 ## Shell environment
@@ -88,6 +89,8 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 flatpak install flathub rest.insomnia.Insomnia --user -y
 flatpak install flathub com.anydesk.Anydesk --user -y
 flatpak install flathub im.riot.Riot --user -y
+flatpak install flathub org.videolan.VLC --user -y
+flatpak install flathub org.mozilla.Thunderbird --user -y
 
 # Install Telegram and fix font
 flatpak install flathub org.telegram.desktop --user -y
