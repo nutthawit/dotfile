@@ -20,8 +20,8 @@ plugin=org.kde.plasma.digitalclock
 
 [Containments][2][Applets][21][Configuration]
 PreloadWeight=100
-popupHeight=450
-popupWidth=560
+popupHeight=492
+popupWidth=492
 
 [Containments][2][Applets][22]
 immutability=1
@@ -53,7 +53,7 @@ DialogHeight=540
 DialogWidth=720
 
 [Containments][2][Applets][5][Configuration][General]
-launchers=applications:org.kde.konsole.desktop,preferred://browser,applications:code.desktop,applications:google-chrome.desktop,applications:rest.insomnia.Insomnia.desktop,applications:org.telegram.desktop.desktop,applications:org.keepassxc.KeePassXC.desktop,file:///home/tie/.local/share/flatpak/exports/share/applications/im.riot.Riot.desktop,applications:org.kde.okular.desktop
+launchers=applications:org.kde.konsole.desktop,preferred://browser,applications:code.desktop,applications:google-chrome.desktop,applications:rest.insomnia.Insomnia.desktop,applications:org.telegram.desktop.desktop,applications:org.keepassxc.KeePassXC.desktop,applications:org.kde.okular.desktop,applications:org.kde.konversation.desktop,applications:org.mozilla.Thunderbird.desktop
 
 [Containments][2][Applets][6]
 immutability=1
@@ -70,13 +70,23 @@ SystrayContainmentId=8
 [Containments][2][General]
 AppletOrder=3;4;5;6;7;21;22
 
-[Containments][30]
+[Containments][31]
 ItemGeometries-1536x864=
+ItemGeometries-1920x1080=
 ItemGeometriesHorizontal=
-activityId=f1bc8188-aa1a-4f50-b507-0f3dd670871a
+activityId=49e116a2-5baa-4e3a-abd4-fedba3d6dc38
 formfactor=0
 immutability=1
 lastScreen=0
+location=0
+plugin=org.kde.plasma.folder
+wallpaperplugin=org.kde.image
+
+[Containments][32]
+activityId=49e116a2-5baa-4e3a-abd4-fedba3d6dc38
+formfactor=0
+immutability=1
+lastScreen=1
 location=0
 plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
@@ -103,6 +113,9 @@ plugin=org.kde.plasma.cameraindicator
 [Containments][8][Applets][12]
 immutability=1
 plugin=org.kde.plasma.clipboard
+
+[Containments][8][Applets][12][Configuration]
+PreloadWeight=55
 
 [Containments][8][Applets][13]
 immutability=1
@@ -146,7 +159,6 @@ plugin=org.kde.plasma.volume
 PreloadWeight=100
 
 [Containments][8][Applets][20][Configuration][General]
-currentTab=streams
 migrated=true
 
 [Containments][8][Applets][23]
@@ -154,7 +166,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][8][Applets][23][Configuration]
-PreloadWeight=80
+PreloadWeight=98
 
 [Containments][8][Applets][24]
 immutability=1

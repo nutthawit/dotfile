@@ -10,7 +10,23 @@
   </info>
  </bookmark>
  <bookmark href="file:///home/tie/.dotfile">
-  <title></title>
+  <title/>
+  <info>
+   <metadata owner="http://freedesktop.org">
+    <bookmark:icon name=""/>
+   </metadata>
+  </info>
+ </bookmark>
+ <bookmark href="file:///home/tie/projects/community">
+  <title>community</title>
+  <info>
+   <metadata owner="http://freedesktop.org">
+    <bookmark:icon name=""/>
+   </metadata>
+  </info>
+ </bookmark>
+ <bookmark href="file:///home/tie/projects/work/dcloud/cloudform">
+  <title>cloudform</title>
   <info>
    <metadata owner="http://freedesktop.org">
     <bookmark:icon name=""/>

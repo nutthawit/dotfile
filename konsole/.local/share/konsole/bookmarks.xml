@@ -25,4 +25,20 @@
    </metadata>
   </info>
  </bookmark>
+ <bookmark href="file:///home/tie/projects/work/dcloud/cloudform">
+  <title>cloudform</title>
+  <info>
+   <metadata owner="http://freedesktop.org">
+    <bookmark:icon name=""/>
+   </metadata>
+  </info>
+ </bookmark>
+ <bookmark href="file:///home/tie/projects/work/dcloud-info">
+  <title>dcloud-info</title>
+  <info>
+   <metadata owner="http://freedesktop.org">
+    <bookmark:icon name=""/>
+   </metadata>
+  </info>
+ </bookmark>
 </xbel>

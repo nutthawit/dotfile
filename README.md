@@ -60,12 +60,14 @@ stow fish
 # Install utility programs
 cargo install bat eza ripgrep zoxide
 
-# Install fisher plugin manager
+# NOTE: After use stow these steps are not required.
+# # Install fisher plugin manager
 # curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
 
-# Install fish-shell plugins
+# # Install fish-shell plugins
 # fisher install jhillyerd/plugin-git
 # fisher install oh-my-fish/plugin-bang-bang
+# fisher install evanlucas/fish-kubectl-completions
 
 # Install nerdfonts
 git clone --depth 1 https://github.com/ryanoasis/nerd-fonts.git ~/.nerd-fonts
@@ -130,4 +132,10 @@ sudo dnf install -y python3-pip python3-devel python3.12 libxml2-devel libxslt-d
 
 # Require for connect openshift via oc command
 sudo dnf install -y sshpass
+
+# Install kind and kubectl
+bash -c '[ $(uname -m) = x86_64 ] && curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.25.0/kind-linux-amd64'
+bash -c 'curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"'
+chmod +x kind kubectl
+mv kubectl kind ~/.local/bin/
 ```
