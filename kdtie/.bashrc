@@ -35,15 +35,14 @@ alias gpull='git pull'
 alias gpl='git pull'
 alias gpush='git push'
 alias gph='git push'
-alias gpu='git push'
 
 alias gdiff='git diff'
 alias gdf='git diff'
 
 alias gss='git status'
 alias gadd='git add'
-alias gcm='git commit -m'
-alias gcme='git commit --amend'
+alias gct='git commit -m'
+alias gctd='git commit --amend'
 
 alias gre='git restore'
 alias grt='git reset'
