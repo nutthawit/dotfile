@@ -41,6 +41,8 @@ alias gdf='git diff'
 
 alias gss='git status'
 alias gadd='git add'
+alias gcom='git commit -m'
+alias gcomamd='git commit --amend'
 alias gct='git commit -m'
 alias gctd='git commit --amend'
 
